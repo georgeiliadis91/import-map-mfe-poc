@@ -9,6 +9,6 @@ export default defineConfig({
     },
   },
   output: {
-    name: "lit-project-one",
+    name: "lit-project-two",
   },
 });

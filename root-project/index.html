@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "lit-mfe-one": "http://127.0.0.1:8080/lit-project-one.js",
+          "lit-mfe-two": "http://127.0.0.1:8081/lit-project-two.js"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>

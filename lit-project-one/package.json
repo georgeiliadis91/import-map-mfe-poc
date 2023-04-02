@@ -3,18 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/my-element.es.js",
+  "main": "dist/lit-mfe-one.es.js",
   "exports": {
-    ".": "./dist/my-element.es.js"
+    ".": "./dist/lit-mfe-one.es.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "vite --port=8080",
+    "build": "vite build",
+    "preview": "vite preview --port=8080"
   },
   "dependencies": {
+    "@vaadin/router": "^1.7.5",
     "lit": "^2.6.1"
   },
   "devDependencies": {

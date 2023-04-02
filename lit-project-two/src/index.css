@@ -22,6 +22,7 @@
 
 body {
   padding: 10px;
+  border: 1px solid green;
 }
 
 @media (prefers-color-scheme: light) {
