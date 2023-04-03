@@ -11,9 +11,12 @@ export class Special extends LitElement {
   }
 
   async onBeforeEnter(location) {
-    const data = await fetch(
-      `https://pokeapi.co/api/v2/pokemon?offset=10&limit=10`
-    ).then((res) => res.json());
+
+    const fetchUrl = location.params.id
+      ? "https://pokeapi.co/api/v2/pokemon?offset=10&limit=10"
+      : `https://pokeapi.co/api/v2/pokemon/${id}`;
+
+    const data = await fetch(fetchUrl).then((res) => res.json());
     this.pokemon = data.results;
   }
 

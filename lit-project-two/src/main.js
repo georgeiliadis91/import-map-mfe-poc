@@ -14,6 +14,11 @@ function initRouter() {
       component: "my-special-mfe-two",
       action: () => import("./Special"),
     },
+    {
+      path: "/special/:id",
+      component: "my-special-mfe-two",
+      action: () => import("./Special"),
+    },
   ]);
 }
 
