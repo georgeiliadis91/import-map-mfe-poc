@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: blue;
+      }
+    </style>
     <script type="importmap">
       {
         "imports": {
@@ -14,7 +29,11 @@
     </script>
   </head>
   <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/special">Special</a>
+    </nav>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
   </body>
+  <script type="module" src="/main.js"></script>
 </html>
