@@ -2,7 +2,6 @@ import { html, LitElement } from "lit";
 
 export class Special extends LitElement {
   static properties = {
-    pathId: "",
     pokemon: [],
   };
 
@@ -10,7 +9,7 @@ export class Special extends LitElement {
     super();
   }
 
-  async onBeforeEnter(location) {
+  async onBeforeEnter() {
     const data = await fetch(
       `https://pokeapi.co/api/v2/pokemon?offset=10&limit=10`
     ).then((res) => res.json());
