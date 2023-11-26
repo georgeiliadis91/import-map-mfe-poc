@@ -17,8 +17,8 @@ function initRouter() {
   ]);
 }
 
+// This is used only when running the project by it self
 export function init() {
   window.addEventListener("load", () => initRouter());
 }
 
-// init();

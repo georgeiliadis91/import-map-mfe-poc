@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: blue;
+      }
+    </style>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "lit-mfe-one": "http://localhost:8080/lit-project-one.js",
+          "lit-mfe-two": "http://localhost:8081/lit-project-two.js"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-52bc7c70.js"></script>
+    <link rel="stylesheet" href="/assets/index-a8331beb.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/special">Special</a>
+    </nav>
+    <div id="app"></div>
+  </body>
+  
+</html>

@@ -21,4 +21,3 @@ export function init() {
   window.addEventListener("load", () => initRouter());
 }
 
-// init();
